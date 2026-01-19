@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get involved with Turn The Page Club. Sign up to volunteer, request book donations, or register for our reading programs.">
+    <title>Get Involved | Turn The Page Club</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <style>
+        /* Additional form styles for this page */
+        .form-tabs {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .form-tab {
+            flex: 1;
+            min-width: 200px;
+            padding: 1rem 1.5rem;
+            background: var(--color-white);
+            border: 2px solid var(--color-secondary-dark);
+            border-radius: var(--radius-sm);
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-text);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            text-align: center;
+        }
+
+        .form-tab:hover {
+            border-color: var(--color-accent);
+        }
+
+        .form-tab.active {
+            background: var(--color-primary);
+            border-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .form-panel {
+            display: none;
+        }
+
+        .form-panel.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: var(--color-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Turn The Page Club Logo">
+                <span class="logo-text">
+                    Turn The Page
+                    <span class="tagline">Club</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" role="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="programs.html" class="nav-link">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link active">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Get Involved</span>
+                </nav>
+                <h1>Get Involved</h1>
+                <p>Join our mission to spread literacy. Choose how you'd like to participate!</p>
+            </div>
+        </section>
+
+        <!-- Registration Forms Section -->
+        <section class="section">
+            <div class="container">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <!-- Form Tabs -->
+                    <div class="form-tabs">
+                        <button class="form-tab active" data-tab="volunteer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: block; margin: 0 auto 0.5rem;">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                            Volunteer
+                        </button>
+                        <button class="form-tab" data-tab="books">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: block; margin: 0 auto 0.5rem;">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            Request Books
+                        </button>
+                        <button class="form-tab" data-tab="program">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: block; margin: 0 auto 0.5rem;">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            Join Program
+                        </button>
+                    </div>
+
+                    <!-- Volunteer Registration Form -->
+                    <div class="form-panel active" id="volunteer-panel">
+                        <div class="card animate-on-scroll">
+                            <div class="card-content" style="padding: 2rem;">
+                                <h2 style="margin-bottom: 0.5rem;">Volunteer Registration</h2>
+                                <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">Join our team of dedicated volunteers and help spread the joy of reading!</p>
+
+                                <form action="https://formspree.io/f/your-form-id" method="POST" data-validate data-ajax>
+                                    <input type="hidden" name="form_type" value="Volunteer Registration">
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label" for="vol-firstname">First Name *</label>
+                                            <input type="text" id="vol-firstname" name="first_name" class="form-input" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="vol-lastname">Last Name *</label>
+                                            <input type="text" id="vol-lastname" name="last_name" class="form-input" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label" for="vol-email">Email Address *</label>
+                                            <input type="email" id="vol-email" name="email" class="form-input" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="vol-phone">Phone Number</label>
+                                            <input type="tel" id="vol-phone" name="phone" class="form-input">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="vol-age">Age Group *</label>
+                                        <select id="vol-age" name="age_group" class="form-select" required>
+                                            <option value="">Select your age group</option>
+                                            <option value="13-17">13-17 (Teen)</option>
+                                            <option value="18-24">18-24 (Young Adult)</option>
+                                            <option value="25-34">25-34</option>
+                                            <option value="35-44">35-44</option>
+                                            <option value="45-54">45-54</option>
+                                            <option value="55+">55+</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label">Areas of Interest *</label>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-item">
+                                                <input type="checkbox" name="interests[]" value="reading_buddy">
+                                                <span>Reading Buddy (1-on-1 mentoring)</span>
+                                            </label>
+                                            <label class="checkbox-item">
+                                                <input type="checkbox" name="interests[]" value="book_sorting">
+                                                <span>Book Sorting &amp; Distribution</span>
+                                            </label>
+                                            <label class="checkbox-item">
+                                                <input type="checkbox" name="interests[]" value="event_support">
+                                                <span>Event Support</span>
+                                            </label>
+                                            <label class="checkbox-item">
+                                                <input type="checkbox" name="interests[]" value="workshop_helper">
+                                                <span>Workshop Helper</span>
+                                            </label>
+                                            <label class="checkbox-item">
+                                                <input type="checkbox" name="interests[]" value="admin">
+                                                <span>Administrative Support</span>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="vol-availability">Availability</label>
+                                        <select id="vol-availability" name="availability" class="form-select">
+                                            <option value="">Select your availability</option>
+                                            <option value="weekday_morning">Weekday Mornings</option>
+                                            <option value="weekday_afternoon">Weekday Afternoons</option>
+                                            <option value="weekday_evening">Weekday Evenings</option>
+                                            <option value="weekend">Weekends</option>
+                                            <option value="flexible">Flexible</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="vol-why">Why do you want to volunteer with us?</label>
+                                        <textarea id="vol-why" name="motivation" class="form-textarea" rows="4" placeholder="Tell us a bit about yourself and why you're interested in volunteering..."></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                        Submit Volunteer Application
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Book Request Form -->
+                    <div class="form-panel" id="books-panel">
+                        <div class="card animate-on-scroll">
+                            <div class="card-content" style="padding: 2rem;">
+                                <h2 style="margin-bottom: 0.5rem;">Request Books</h2>
+                                <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">Request books for your child, classroom, or organization.</p>
+
+                                <form action="https://formspree.io/f/your-form-id" method="POST" data-validate data-ajax>
+                                    <input type="hidden" name="form_type" value="Book Request">
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="book-request-type">Request Type *</label>
+                                        <select id="book-request-type" name="request_type" class="form-select" required>
+                                            <option value="">Select request type</option>
+                                            <option value="individual">Individual/Family</option>
+                                            <option value="classroom">Classroom/School</option>
+                                            <option value="organization">Organization/Community Center</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label" for="book-name">Contact Name *</label>
+                                            <input type="text" id="book-name" name="contact_name" class="form-input" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="book-email">Email Address *</label>
+                                            <input type="email" id="book-email" name="email" class="form-input" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="book-org">Organization Name (if applicable)</label>
+                                        <input type="text" id="book-org" name="organization" class="form-input">
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label" for="book-children">Number of Children</label>
+                                            <input type="number" id="book-children" name="num_children" class="form-input" min="1" placeholder="How many children need books?">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="book-ages">Age Range</label>
+                                            <select id="book-ages" name="age_range" class="form-select">
+                                                <option value="">Select age range</option>
+                                                <option value="0-3">0-3 years (Board Books)</option>
+                                                <option value="4-6">4-6 years (Picture Books)</option>
+                                                <option value="7-9">7-9 years (Early Readers)</option>
+                                                <option value="10-12">10-12 years (Middle Grade)</option>
+                                                <option value="13-18">13-18 years (Young Adult)</option>
+                                                <option value="mixed">Mixed Ages</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="book-interests">Reading Interests or Preferences</label>
+                                        <textarea id="book-interests" name="reading_interests" class="form-textarea" rows="3" placeholder="Any specific genres, topics, or types of books preferred?"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="book-additional">Additional Information</label>
+                                        <textarea id="book-additional" name="additional_info" class="form-textarea" rows="3" placeholder="Any other details we should know about your request?"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                        Submit Book Request
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Program Registration Form -->
+                    <div class="form-panel" id="program-panel">
+                        <div class="card animate-on-scroll">
+                            <div class="card-content" style="padding: 2rem;">
+                                <h2 style="margin-bottom: 0.5rem;">Program Registration</h2>
+                                <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">Sign up your child for our Reading Buddies program or literacy workshops.</p>
+
+                                <form action="https://formspree.io/f/your-form-id" method="POST" data-validate data-ajax>
+                                    <input type="hidden" name="form_type" value="Program Registration">
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="prog-program">Program *</label>
+                                        <select id="prog-program" name="program" class="form-select" required>
+                                            <option value="">Select a program</option>
+                                            <option value="reading_buddies">Reading Buddies (1-on-1 Mentoring)</option>
+                                            <option value="literacy_workshop">Literacy Workshops</option>
+                                            <option value="both">Both Programs</option>
+                                        </select>
+                                    </div>
+
+                                    <h4 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--color-primary);">Parent/Guardian Information</h4>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label" for="prog-parent-name">Parent/Guardian Name *</label>
+                                            <input type="text" id="prog-parent-name" name="parent_name" class="form-input" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="prog-parent-email">Email Address *</label>
+                                            <input type="email" id="prog-parent-email" name="parent_email" class="form-input" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="prog-parent-phone">Phone Number *</label>
+                                        <input type="tel" id="prog-parent-phone" name="parent_phone" class="form-input" required>
+                                    </div>
+
+                                    <h4 style="margin-top: 1.5rem; margin-bottom: 1rem; color: var(--color-primary);">Child Information</h4>
+
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label class="form-label" for="prog-child-name">Child's Name *</label>
+                                            <input type="text" id="prog-child-name" name="child_name" class="form-input" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="form-label" for="prog-child-age">Child's Age *</label>
+                                            <input type="number" id="prog-child-age" name="child_age" class="form-input" min="3" max="18" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="prog-grade">Grade Level</label>
+                                        <select id="prog-grade" name="grade_level" class="form-select">
+                                            <option value="">Select grade level</option>
+                                            <option value="prek">Pre-K</option>
+                                            <option value="k">Kindergarten</option>
+                                            <option value="1">1st Grade</option>
+                                            <option value="2">2nd Grade</option>
+                                            <option value="3">3rd Grade</option>
+                                            <option value="4">4th Grade</option>
+                                            <option value="5">5th Grade</option>
+                                            <option value="6-8">Middle School (6-8)</option>
+                                            <option value="9-12">High School (9-12)</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="prog-reading-level">Current Reading Level</label>
+                                        <select id="prog-reading-level" name="reading_level" class="form-select">
+                                            <option value="">Select reading level (if known)</option>
+                                            <option value="pre_reader">Pre-Reader (learning letters)</option>
+                                            <option value="beginner">Beginner (learning to read)</option>
+                                            <option value="developing">Developing (reading simple books)</option>
+                                            <option value="fluent">Fluent (reading chapter books)</option>
+                                            <option value="advanced">Advanced (reading above grade level)</option>
+                                            <option value="unsure">Not Sure</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="prog-interests">Child's Interests</label>
+                                        <textarea id="prog-interests" name="child_interests" class="form-textarea" rows="3" placeholder="What does your child enjoy? (e.g., animals, sports, fantasy, science)"></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-label" for="prog-notes">Additional Notes</label>
+                                        <textarea id="prog-notes" name="additional_notes" class="form-textarea" rows="3" placeholder="Anything else we should know to best support your child?"></textarea>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                        Submit Registration
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" style="background: var(--color-secondary-dark);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="card card-book animate-on-scroll" style="margin-bottom: 1rem;">
+                        <div class="card-content">
+                            <h4 style="color: var(--color-primary);">How old do I need to be to volunteer?</h4>
+                            <p>Volunteers aged 13 and up are welcome! Those under 18 may need parental consent for certain activities.</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-book animate-on-scroll" style="margin-bottom: 1rem;">
+                        <div class="card-content">
+                            <h4 style="color: var(--color-primary);">Is there a cost to participate in programs?</h4>
+                            <p>No! All of our programs are completely free for participants. We believe every child deserves access to literacy support regardless of financial situation.</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-book animate-on-scroll" style="margin-bottom: 1rem;">
+                        <div class="card-content">
+                            <h4 style="color: var(--color-primary);">How are Reading Buddies matched with children?</h4>
+                            <p>We carefully match volunteers with children based on availability, interests, and reading level to ensure the best possible learning experience.</p>
+                        </div>
+                    </div>
+
+                    <div class="card card-book animate-on-scroll">
+                        <div class="card-content">
+                            <h4 style="color: var(--color-primary);">What kind of training do volunteers receive?</h4>
+                            <p>All Reading Buddy volunteers receive training on effective reading strategies, working with children, and our program guidelines before being matched.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Turn The Page Club</h4>
+                    <p>A youth-led non-profit dedicated to spreading literacy and the joy of reading to children in our community.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="register.html">Get Involved</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html#donations">Book Donations</a></li>
+                        <li><a href="programs.html#buddies">Reading Buddies</a></li>
+                        <li><a href="programs.html#workshops">Literacy Workshops</a></li>
+                        <li><a href="programs.html#events">Community Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        info@turnthepageclub.org
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn btn-sm btn-accent">Send a Message</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Turn The Page Club. All rights reserved. | Made with love for literacy</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+    <script>
+        // Tab switching functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.form-tab');
+            const panels = document.querySelectorAll('.form-panel');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetPanel = this.getAttribute('data-tab');
+
+                    // Update tabs
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Update panels
+                    panels.forEach(p => p.classList.remove('active'));
+                    document.getElementById(targetPanel + '-panel').classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

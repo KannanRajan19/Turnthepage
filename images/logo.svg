@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B4332"/>
+      <stop offset="100%" style="stop-color:#14342A"/>
+    </linearGradient>
+    <linearGradient id="pageGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FDF6E3"/>
+      <stop offset="100%" style="stop-color:#F5EBD3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Open Book Icon -->
+  <g transform="translate(5, 5)">
+    <!-- Book spine -->
+    <rect x="22" y="5" width="6" height="45" rx="2" fill="url(#bookGradient)"/>
+
+    <!-- Left pages -->
+    <path d="M22 8 Q8 12 3 18 L3 48 Q10 42 22 40 Z" fill="url(#pageGradient)" stroke="#D4A574" stroke-width="1.5"/>
+    <!-- Text lines on left -->
+    <path d="M18 16 Q12 18 7 22" stroke="#D4A574" stroke-width="0.75" fill="none" opacity="0.6"/>
+    <path d="M18 24 Q12 26 7 30" stroke="#D4A574" stroke-width="0.75" fill="none" opacity="0.6"/>
+    <path d="M18 32 Q12 34 7 38" stroke="#D4A574" stroke-width="0.75" fill="none" opacity="0.6"/>
+
+    <!-- Right pages -->
+    <path d="M28 8 Q42 12 47 18 L47 48 Q40 42 28 40 Z" fill="url(#pageGradient)" stroke="#D4A574" stroke-width="1.5"/>
+    <!-- Text lines on right -->
+    <path d="M32 16 Q38 18 43 22" stroke="#D4A574" stroke-width="0.75" fill="none" opacity="0.6"/>
+    <path d="M32 24 Q38 26 43 30" stroke="#D4A574" stroke-width="0.75" fill="none" opacity="0.6"/>
+    <path d="M32 32 Q38 34 43 38" stroke="#D4A574" stroke-width="0.75" fill="none" opacity="0.6"/>
+
+    <!-- Page turning effect -->
+    <path d="M28 8 Q35 5 42 10 Q48 18 45 30 Q40 24 32 20 Q28 15 28 8" fill="#FDF6E3" stroke="#D4A574" stroke-width="0.75" opacity="0.85">
+      <animateTransform attributeName="transform" type="rotate" values="0 35 25; 8 35 25; 0 35 25" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>

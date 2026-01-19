@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600">
+  <defs>
+    <!-- Book gradients -->
+    <linearGradient id="teal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2A7C7C"/>
+      <stop offset="100%" style="stop-color:#1D5F5F"/>
+    </linearGradient>
+    <linearGradient id="copper1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8985A"/>
+      <stop offset="100%" style="stop-color:#D4824A"/>
+    </linearGradient>
+    <linearGradient id="cream1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5EDE3"/>
+      <stop offset="100%" style="stop-color:#E8DFD3"/>
+    </linearGradient>
+    <linearGradient id="navy1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3D5A6F"/>
+      <stop offset="100%" style="stop-color:#2D4555"/>
+    </linearGradient>
+    <linearGradient id="sage1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8FAE8B"/>
+      <stop offset="100%" style="stop-color:#7A9A76"/>
+    </linearGradient>
+    <linearGradient id="plum1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B7B8E"/>
+      <stop offset="100%" style="stop-color:#6B5B6E"/>
+    </linearGradient>
+    <linearGradient id="pages" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFEF9"/>
+      <stop offset="100%" style="stop-color:#F5F0E6"/>
+    </linearGradient>
+
+    <!-- Soft shadow filter -->
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="4" dy="6" stdDeviation="8" flood-color="#2D3640" flood-opacity="0.15"/>
+    </filter>
+    <filter id="lightShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="3" stdDeviation="4" flood-color="#2D3640" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Main artistic book stack -->
+  <g transform="translate(80, 100)">
+
+    <!-- Bottom layer - Large horizontal books -->
+    <!-- Big teal book (base) -->
+    <g filter="url(#softShadow)">
+      <rect x="40" y="380" width="280" height="45" rx="3" fill="url(#teal1)"/>
+      <rect x="45" y="383" width="6" height="39" fill="#1D5F5F"/>
+      <rect x="314" y="380" width="6" height="45" fill="url(#pages)"/>
+      <text x="180" y="408" font-family="Georgia, serif" font-size="11" fill="#F0B078" text-anchor="middle" font-style="italic">Pride and Prejudice</text>
+    </g>
+
+    <!-- Navy book slightly angled -->
+    <g filter="url(#softShadow)" transform="rotate(-3, 200, 360)">
+      <rect x="60" y="335" width="260" height="40" rx="3" fill="url(#navy1)"/>
+      <rect x="65" y="338" width="5" height="34" fill="#2D4555"/>
+      <rect x="315" y="335" width="5" height="40" fill="url(#pages)"/>
+      <text x="190" y="360" font-family="Georgia, serif" font-size="10" fill="#E8985A" text-anchor="middle">The Great Gatsby</text>
+    </g>
+
+    <!-- Copper/terracotta book -->
+    <g filter="url(#softShadow)" transform="rotate(2, 180, 310)">
+      <rect x="50" y="295" width="240" height="35" rx="3" fill="url(#copper1)"/>
+      <rect x="55" y="298" width="5" height="29" fill="#D4824A"/>
+      <rect x="285" y="295" width="5" height="35" fill="url(#pages)"/>
+      <text x="170" y="317" font-family="Georgia, serif" font-size="9" fill="#FDF8F3" text-anchor="middle">Little Women</text>
+    </g>
+
+    <!-- Cream/beige book -->
+    <g filter="url(#softShadow)">
+      <rect x="70" y="255" width="220" height="35" rx="3" fill="url(#cream1)"/>
+      <rect x="75" y="258" width="5" height="29" fill="#E8DFD3"/>
+      <rect x="285" y="255" width="5" height="35" fill="url(#pages)"/>
+      <text x="180" y="278" font-family="Georgia, serif" font-size="9" fill="#2A7C7C" text-anchor="middle">To Kill a Mockingbird</text>
+    </g>
+
+    <!-- Sage green book angled other way -->
+    <g filter="url(#softShadow)" transform="rotate(-2, 180, 230)">
+      <rect x="80" y="220" width="200" height="32" rx="3" fill="url(#sage1)"/>
+      <rect x="85" y="223" width="4" height="26" fill="#7A9A76"/>
+      <rect x="276" y="220" width="4" height="32" fill="url(#pages)"/>
+      <text x="178" y="240" font-family="Georgia, serif" font-size="8" fill="#2D3640" text-anchor="middle">The Secret Garden</text>
+    </g>
+
+    <!-- Plum book -->
+    <g filter="url(#softShadow)" transform="rotate(1, 160, 195)">
+      <rect x="90" y="190" width="180" height="28" rx="3" fill="url(#plum1)"/>
+      <rect x="95" y="193" width="4" height="22" fill="#6B5B6E"/>
+      <rect x="266" y="190" width="4" height="28" fill="url(#pages)"/>
+    </g>
+
+    <!-- Standing book leaning against stack -->
+    <g filter="url(#softShadow)" transform="rotate(-12, 340, 380)">
+      <rect x="330" y="250" width="35" height="170" rx="3" fill="url(#teal1)"/>
+      <rect x="333" y="255" width="29" height="3" fill="#1D5F5F"/>
+      <rect x="330" y="415" width="35" height="5" fill="url(#pages)"/>
+      <!-- Spine text vertical -->
+      <text x="350" y="340" font-family="Georgia, serif" font-size="10" fill="#F0B078" text-anchor="middle" transform="rotate(90, 350, 340)">Jane Eyre</text>
+    </g>
+
+    <!-- Another standing book -->
+    <g filter="url(#softShadow)" transform="rotate(8, 380, 380)">
+      <rect x="370" y="280" width="30" height="140" rx="3" fill="url(#copper1)"/>
+      <rect x="373" y="285" width="24" height="3" fill="#D4824A"/>
+      <rect x="370" y="415" width="30" height="5" fill="url(#pages)"/>
+    </g>
+
+    <!-- Open book on top of stack -->
+    <g filter="url(#lightShadow)" transform="translate(100, 120)">
+      <!-- Book spine -->
+      <rect x="70" y="45" width="10" height="65" rx="2" fill="url(#navy1)"/>
+
+      <!-- Left pages spread -->
+      <path d="M70 50 Q35 55 15 70 L15 108 Q40 98 70 95 Z" fill="url(#pages)" stroke="#E8DFD3" stroke-width="1"/>
+      <!-- Page lines left -->
+      <line x1="25" y1="72" x2="60" y2="65" stroke="#D4D0C4" stroke-width="0.5"/>
+      <line x1="25" y1="80" x2="60" y2="73" stroke="#D4D0C4" stroke-width="0.5"/>
+      <line x1="25" y1="88" x2="60" y2="81" stroke="#D4D0C4" stroke-width="0.5"/>
+
+      <!-- Right pages spread -->
+      <path d="M80 50 Q115 55 135 70 L135 108 Q110 98 80 95 Z" fill="url(#pages)" stroke="#E8DFD3" stroke-width="1"/>
+      <!-- Page lines right -->
+      <line x1="90" y1="65" x2="125" y2="72" stroke="#D4D0C4" stroke-width="0.5"/>
+      <line x1="90" y1="73" x2="125" y2="80" stroke="#D4D0C4" stroke-width="0.5"/>
+      <line x1="90" y1="81" x2="125" y2="88" stroke="#D4D0C4" stroke-width="0.5"/>
+
+      <!-- Turning page with subtle animation -->
+      <path d="M80 50 Q100 42 118 55 Q125 75 115 95 Q95 88 85 80 Q78 65 80 50" fill="#FFFEF9" stroke="#E8DFD3" stroke-width="0.5" opacity="0.9">
+        <animateTransform attributeName="transform" type="rotate" values="0 95 70; 15 95 70; 0 95 70" dur="4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+
+    <!-- Small book laying flat on top -->
+    <g filter="url(#lightShadow)" transform="rotate(-15, 250, 180)">
+      <rect x="220" y="160" width="90" height="22" rx="2" fill="url(#sage1)"/>
+      <rect x="224" y="163" width="3" height="16" fill="#7A9A76"/>
+      <rect x="307" y="160" width="3" height="22" fill="url(#pages)"/>
+    </g>
+  </g>
+
+  <!-- Floating decorative elements -->
+  <!-- Reading glasses -->
+  <g transform="translate(420, 480)" opacity="0.5">
+    <ellipse cx="15" cy="12" rx="14" ry="11" fill="none" stroke="#E8985A" stroke-width="2.5"/>
+    <ellipse cx="50" cy="12" rx="14" ry="11" fill="none" stroke="#E8985A" stroke-width="2.5"/>
+    <path d="M29 12 Q33 8 36 12" fill="none" stroke="#E8985A" stroke-width="2.5"/>
+    <line x1="1" y1="12" x2="-15" y2="8" stroke="#E8985A" stroke-width="2.5"/>
+    <line x1="64" y1="12" x2="80" y2="8" stroke="#E8985A" stroke-width="2.5"/>
+  </g>
+
+  <!-- Coffee cup steam -->
+  <g transform="translate(480, 380)" opacity="0.4">
+    <path d="M10 30 L15 65 L50 65 L55 30 Z" fill="none" stroke="#2A7C7C" stroke-width="2"/>
+    <path d="M55 38 Q72 38 72 50 Q72 60 55 58" fill="none" stroke="#2A7C7C" stroke-width="2"/>
+    <!-- Steam -->
+    <path d="M25 25 Q28 15 25 8" fill="none" stroke="#2A7C7C" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="d" values="M25 25 Q28 15 25 8; M25 25 Q22 12 25 3; M25 25 Q28 15 25 8" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M38 22 Q42 12 38 5" fill="none" stroke="#2A7C7C" stroke-width="1.5" opacity="0.6">
+      <animate attributeName="d" values="M38 22 Q42 12 38 5; M38 22 Q34 10 38 0; M38 22 Q42 12 38 5" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- Floating bookmark -->
+  <g transform="translate(50, 180)" opacity="0.6">
+    <path d="M0 0 L35 0 L35 90 L17.5 75 L0 90 Z" fill="#E8985A"/>
+    <rect x="6" y="12" width="23" height="2.5" fill="#FDF8F3" rx="1"/>
+    <rect x="6" y="22" width="18" height="2.5" fill="#FDF8F3" rx="1"/>
+    <rect x="6" y="32" width="20" height="2.5" fill="#FDF8F3" rx="1"/>
+    <animateTransform attributeName="transform" type="translate" values="50,180; 55,175; 50,180" dur="5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Small floating closed book -->
+  <g transform="translate(500, 150)" opacity="0.35">
+    <rect x="0" y="0" width="50" height="65" rx="3" fill="url(#plum1)"/>
+    <rect x="4" y="4" width="3" height="57" fill="#6B5B6E"/>
+    <rect x="47" y="0" width="3" height="65" fill="url(#pages)"/>
+    <animateTransform attributeName="transform" type="translate" values="500,150; 495,145; 500,150" dur="6s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Tiny decorative dots/stars -->
+  <circle cx="520" cy="280" r="4" fill="#E8985A" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="70" cy="350" r="3" fill="#2A7C7C" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="550" cy="400" r="3" fill="#2A7C7C" opacity="0.35">
+    <animate attributeName="opacity" values="0.35;0.6;0.35" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

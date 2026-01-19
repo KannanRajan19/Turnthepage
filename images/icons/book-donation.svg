@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Box -->
+  <path d="M8 25 L32 15 L56 25 L56 50 L32 60 L8 50 Z" fill="#FDF6E3" stroke="#1B4332" stroke-width="2"/>
+  <path d="M32 15 L32 60" stroke="#1B4332" stroke-width="2"/>
+  <path d="M8 25 L32 35 L56 25" fill="none" stroke="#1B4332" stroke-width="2"/>
+
+  <!-- Books going into box -->
+  <g>
+    <rect x="22" y="5" width="20" height="4" rx="1" fill="#1B4332">
+      <animate attributeName="y" values="0; 28; 28" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1; 1; 0" dur="2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Heart on box -->
+  <path d="M32 42 C28 38 24 40 24 44 C24 48 32 52 32 52 C32 52 40 48 40 44 C40 40 36 38 32 42" fill="#D4A574"/>
+</svg>

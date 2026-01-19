@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Calendar base -->
+  <rect x="10" y="14" width="44" height="40" rx="3" fill="#FDF6E3" stroke="#1B4332" stroke-width="2"/>
+
+  <!-- Calendar header -->
+  <rect x="10" y="14" width="44" height="12" rx="3" fill="#1B4332"/>
+  <rect x="10" y="23" width="44" height="3" fill="#1B4332"/>
+
+  <!-- Calendar rings -->
+  <rect x="20" y="10" width="4" height="10" rx="2" fill="#D4A574"/>
+  <rect x="40" y="10" width="4" height="10" rx="2" fill="#D4A574"/>
+
+  <!-- Calendar grid -->
+  <g fill="#2D3B35" font-family="sans-serif" font-size="6">
+    <text x="16" y="36">1</text>
+    <text x="24" y="36">2</text>
+    <text x="32" y="36">3</text>
+    <text x="40" y="36">4</text>
+    <text x="48" y="36">5</text>
+  </g>
+
+  <!-- Event marker (star/book) -->
+  <g transform="translate(28, 40)">
+    <rect x="0" y="0" width="12" height="10" rx="1" fill="#D4A574"/>
+    <line x1="6" y1="0" x2="6" y2="10" stroke="#1B4332" stroke-width="0.5"/>
+  </g>
+
+  <!-- People silhouettes -->
+  <g transform="translate(12, 48)" opacity="0.7">
+    <circle cx="5" cy="3" r="3" fill="#1B4332"/>
+    <circle cx="15" cy="3" r="3" fill="#D4A574"/>
+    <circle cx="25" cy="3" r="3" fill="#1B4332"/>
+    <circle cx="35" cy="3" r="3" fill="#D4A574"/>
+  </g>
+</svg>

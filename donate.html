@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support Turn The Page Club through monetary donations or book donations. Help us spread literacy to children in need.">
+    <title>Donate | Turn The Page Club</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="Turn The Page Club Logo">
+                <span class="logo-text">
+                    Turn The Page
+                    <span class="tagline">Club</span>
+                </span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" role="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="programs.html" class="nav-link">Programs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="donate.html" class="nav-link active">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Donate</span>
+                </nav>
+                <h1>Support Our Mission</h1>
+                <p>Your generosity helps us put books in the hands of children who need them most.</p>
+            </div>
+        </section>
+
+        <!-- Piggy Bank Hero -->
+        <section class="section">
+            <div class="container" style="text-align: center;">
+                <img src="images/piggy-bank.svg" alt="Piggy bank illustration" class="animate-on-scroll" style="width: 150px; height: 150px; margin: 0 auto 2rem;">
+                <h2>Every Dollar Makes a Difference</h2>
+                <p style="max-width: 600px; margin: 0 auto; font-size: 1.125rem; color: var(--color-text-light);">
+                    Your financial support enables us to purchase new books, organize community events, and expand our programs to reach more children.
+                </p>
+            </div>
+        </section>
+
+        <!-- Donation Impact Cards -->
+        <section class="section" style="background: var(--color-secondary-dark);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Your Impact</h2>
+                    <p>See how your donation directly helps children in our community</p>
+                </div>
+
+                <div class="donation-options stagger-children">
+                    <div class="donation-card animate-on-scroll animate-fade-up">
+                        <span class="donation-amount">$10</span>
+                        <p class="donation-impact">Provides <strong>2 new books</strong> for a child to keep and cherish</p>
+                        <a href="#donate-now" class="btn btn-primary">Donate $10</a>
+                    </div>
+
+                    <div class="donation-card animate-on-scroll animate-fade-up" style="border-color: var(--color-accent); transform: scale(1.05);">
+                        <span style="display: inline-block; background: var(--color-accent); color: var(--color-text); padding: 0.25rem 1rem; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.5rem;">MOST POPULAR</span>
+                        <span class="donation-amount">$25</span>
+                        <p class="donation-impact">Provides <strong>5 books</strong> for children and supplies for one workshop</p>
+                        <a href="#donate-now" class="btn btn-accent">Donate $25</a>
+                    </div>
+
+                    <div class="donation-card animate-on-scroll animate-fade-up">
+                        <span class="donation-amount">$50</span>
+                        <p class="donation-impact">Sponsors <strong>one Reading Buddy</strong> session for a month</p>
+                        <a href="#donate-now" class="btn btn-primary">Donate $50</a>
+                    </div>
+
+                    <div class="donation-card animate-on-scroll animate-fade-up">
+                        <span class="donation-amount">$100</span>
+                        <p class="donation-impact">Provides a <strong>complete book collection</strong> for a classroom</p>
+                        <a href="#donate-now" class="btn btn-primary">Donate $100</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Now Section -->
+        <section id="donate-now" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Make a Donation</h2>
+                    <p>Choose your preferred method of giving</p>
+                </div>
+
+                <div class="programs-grid">
+                    <!-- PayPal Donation -->
+                    <div class="card animate-on-scroll animate-fade-left" style="text-align: center;">
+                        <div class="card-content" style="padding: 2rem;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" style="margin-bottom: 1rem;">
+                                <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.384a.775.775 0 0 1 .765-.649h6.535c2.165 0 3.912.567 5.087 1.643 1.21 1.108 1.67 2.678 1.369 4.672-.349 2.326-1.305 4.116-2.842 5.324-1.475 1.159-3.412 1.747-5.76 1.747H7.764a.641.641 0 0 0-.633.532l-.055.358z" fill="#003087"/>
+                                <path d="M18.293 7.343c-.015.109-.033.221-.052.335-.758 4.898-3.35 6.594-6.667 6.594H9.576a.819.819 0 0 0-.81.692l-1.027 6.512-.291 1.844a.432.432 0 0 0 .427.5h3.003c.354 0 .654-.257.71-.606l.029-.152.563-3.574.037-.198a.716.716 0 0 1 .71-.606h.447c2.897 0 5.163-1.177 5.826-4.58.276-1.422.133-2.61-.598-3.444a2.876 2.876 0 0 0-.809-.617z" fill="#002f86"/>
+                                <path d="M17.267 6.928a5.665 5.665 0 0 0-.701-.156 8.943 8.943 0 0 0-1.421-.104H10.23a.716.716 0 0 0-.71.606l-1.087 6.897-.032.2a.819.819 0 0 1 .81-.692h1.997c3.316 0 5.908-1.697 6.667-6.594.022-.145.042-.287.058-.427a3.858 3.858 0 0 0-.666-.33z" fill="#001f5c"/>
+                            </svg>
+                            <h3>Donate with PayPal</h3>
+                            <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">Secure online payment through PayPal. You can use your PayPal account or credit/debit card.</p>
+
+                            <!-- PayPal Button Placeholder -->
+                            <div style="background: var(--color-secondary); padding: 1.5rem; border-radius: var(--radius-md); margin-bottom: 1rem;">
+                                <p style="font-size: 0.875rem; color: var(--color-text-light); margin-bottom: 1rem;">PayPal donation button will appear here once connected.</p>
+                                <a href="https://www.paypal.com/donate" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 0.5rem;">
+                                        <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 3.384a.775.775 0 0 1 .765-.649h6.535c2.165 0 3.912.567 5.087 1.643 1.21 1.108 1.67 2.678 1.369 4.672-.349 2.326-1.305 4.116-2.842 5.324-1.475 1.159-3.412 1.747-5.76 1.747H7.764a.641.641 0 0 0-.633.532l-.055.358z"/>
+                                    </svg>
+                                    Donate via PayPal
+                                </a>
+                            </div>
+                            <p style="font-size: 0.75rem; color: var(--color-text-light);">Your donation may be tax-deductible.</p>
+                        </div>
+                    </div>
+
+                    <!-- Other Ways to Give -->
+                    <div class="card animate-on-scroll animate-fade-right" style="text-align: center;">
+                        <div class="card-content" style="padding: 2rem;">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2" style="margin-bottom: 1rem;">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg>
+                            <h3>Other Ways to Give</h3>
+                            <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">Prefer to donate another way? We have options for you!</p>
+
+                            <div style="text-align: left; background: var(--color-secondary); padding: 1.5rem; border-radius: var(--radius-md);">
+                                <h4 style="color: var(--color-primary); font-size: 1rem; margin-bottom: 0.75rem;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 0.5rem;">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                    Check by Mail
+                                </h4>
+                                <p style="font-size: 0.875rem; margin-bottom: 1rem;">Make checks payable to "Turn The Page Club" and mail to our address.</p>
+
+                                <h4 style="color: var(--color-primary); font-size: 1rem; margin-bottom: 0.75rem;">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 0.5rem;">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                    Corporate Matching
+                                </h4>
+                                <p style="font-size: 0.875rem;">Many employers match charitable donations. Check with your HR department!</p>
+                            </div>
+
+                            <a href="contact.html" class="btn btn-secondary mt-md">Contact Us to Arrange</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Book Divider -->
+        <div class="book-divider">
+            <svg class="book-divider-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+        </div>
+
+        <!-- Book Donations Section -->
+        <section class="section" style="background: var(--color-secondary-dark);">
+            <div class="container">
+                <div class="programs-grid" style="align-items: center;">
+                    <div class="animate-on-scroll animate-fade-left">
+                        <img src="images/icons/book-donation.svg" alt="Book donation illustration" style="width: 100%; max-width: 250px; margin: 0 auto; display: block;">
+                    </div>
+                    <div class="animate-on-scroll animate-fade-right">
+                        <h2>Donate Books</h2>
+                        <p style="font-size: 1.125rem; margin-bottom: 1rem;">
+                            Have books to share? We accept new and gently used books for children and young adults (ages 0-18). Your books will find new homes with children who will treasure them!
+                        </p>
+
+                        <h4 style="color: var(--color-accent); margin-top: 1.5rem;">What We Accept:</h4>
+                        <ul style="list-style: none; margin-top: 0.5rem;">
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--color-accent);">&#10003;</span>
+                                Picture books and board books
+                            </li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--color-accent);">&#10003;</span>
+                                Chapter books and middle grade novels
+                            </li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--color-accent);">&#10003;</span>
+                                Young adult fiction and non-fiction
+                            </li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--color-accent);">&#10003;</span>
+                                Educational and activity books
+                            </li>
+                            <li style="padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--color-accent);">&#10003;</span>
+                                Books in languages other than English
+                            </li>
+                        </ul>
+
+                        <h4 style="color: var(--color-accent); margin-top: 1.5rem;">Please Note:</h4>
+                        <ul style="list-style: none; margin-top: 0.5rem;">
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--color-primary);">&#10007;</span>
+                                No books with torn pages or damaged covers
+                            </li>
+                            <li style="margin-bottom: 0.5rem; padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--color-primary);">&#10007;</span>
+                                No textbooks or workbooks with writing
+                            </li>
+                            <li style="padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--color-primary);">&#10007;</span>
+                                No adult books or inappropriate content
+                            </li>
+                        </ul>
+
+                        <div style="margin-top: 1.5rem;">
+                            <a href="contact.html" class="btn btn-primary">Arrange Book Donation</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Corporate Sponsorship -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Corporate Partnerships</h2>
+                    <p>Partner with us to make an even bigger impact</p>
+                </div>
+
+                <div class="card card-book animate-on-scroll" style="max-width: 800px; margin: 0 auto;">
+                    <div class="card-content" style="padding: 2rem;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2">
+                                <path d="M3 21h18"></path>
+                                <path d="M5 21V7l8-4v18"></path>
+                                <path d="M19 21V11l-6-4"></path>
+                                <path d="M9 9v.01"></path>
+                                <path d="M9 12v.01"></path>
+                                <path d="M9 15v.01"></path>
+                                <path d="M9 18v.01"></path>
+                            </svg>
+                            <div>
+                                <h3 style="margin-bottom: 0.25rem;">Become a Corporate Sponsor</h3>
+                                <p style="color: var(--color-text-light); margin: 0;">Make a lasting impact on children's literacy</p>
+                            </div>
+                        </div>
+
+                        <p style="margin-bottom: 1rem;">
+                            We welcome partnerships with businesses and organizations that share our commitment to literacy and education. Corporate sponsors receive:
+                        </p>
+
+                        <ul style="list-style: disc; padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                            <li style="margin-bottom: 0.5rem;">Recognition on our website and at events</li>
+                            <li style="margin-bottom: 0.5rem;">Opportunities for employee volunteer engagement</li>
+                            <li style="margin-bottom: 0.5rem;">Social media acknowledgment</li>
+                            <li style="margin-bottom: 0.5rem;">Customized partnership packages</li>
+                            <li>Tax-deductible contribution receipts</li>
+                        </ul>
+
+                        <a href="contact.html" class="btn btn-primary">Inquire About Sponsorship</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thank You Section -->
+        <section class="section" style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); color: var(--color-white);">
+            <div class="container" style="text-align: center;">
+                <h2 style="color: var(--color-white);">Thank You for Your Support!</h2>
+                <p style="color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto 1.5rem; font-size: 1.125rem;">
+                    Every donation, whether books or funds, helps us bring the joy of reading to children who need it most. Together, we're turning pages and changing lives.
+                </p>
+                <div class="hero-buttons" style="justify-content: center;">
+                    <a href="index.html" class="btn btn-accent">Back to Home</a>
+                    <a href="programs.html" class="btn btn-secondary" style="border-color: var(--color-white); color: var(--color-white);">Learn About Our Programs</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Turn The Page Club</h4>
+                    <p>A youth-led non-profit dedicated to spreading literacy and the joy of reading to children in our community.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Our Programs</a></li>
+                        <li><a href="register.html">Get Involved</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html#donations">Book Donations</a></li>
+                        <li><a href="programs.html#buddies">Reading Buddies</a></li>
+                        <li><a href="programs.html#workshops">Literacy Workshops</a></li>
+                        <li><a href="programs.html#events">Community Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: inline; vertical-align: middle; margin-right: 8px;">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        info@turnthepageclub.org
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        <a href="contact.html" class="btn btn-sm btn-accent">Send a Message</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Turn The Page Club. All rights reserved. | Made with love for literacy</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

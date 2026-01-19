@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F5EBD3"/>
+      <stop offset="100%" style="stop-color:#E5C49A"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGradient)"/>
+
+  <!-- Head -->
+  <circle cx="50" cy="38" r="18" fill="#1B4332"/>
+
+  <!-- Body/shoulders -->
+  <path d="M20 85 Q20 60 50 60 Q80 60 80 85" fill="#1B4332"/>
+
+  <!-- Simple face features (optional, subtle) -->
+  <circle cx="44" cy="36" r="2" fill="#FDF6E3" opacity="0.3"/>
+  <circle cx="56" cy="36" r="2" fill="#FDF6E3" opacity="0.3"/>
+  <path d="M45 44 Q50 48 55 44" fill="none" stroke="#FDF6E3" stroke-width="1.5" opacity="0.3" stroke-linecap="round"/>
+</svg>
