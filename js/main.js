@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSmoothScroll();
     setActiveNavLink();
     initHeroImageToggle();
+    loadEvents();
 });
 
 // ============================================
@@ -343,6 +344,61 @@ function initHeroImageToggle() {
         // Add active class to next image
         heroImages[currentIndex].classList.add('active');
     }, 2000); // Toggle every 2 seconds
+}
+
+// ============================================
+// Load Events from JSON
+// ============================================
+function loadEvents() {
+    const container = document.getElementById('events-container');
+    if (!container) return;
+
+    fetch('data/events.json')
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+            var events = data.events || [];
+
+            if (events.length === 0) {
+                container.innerHTML =
+                    '<p style="text-align: center; color: var(--color-text-light); font-size: 1.1rem; grid-column: 1 / -1;">' +
+                    'No upcoming events — check back soon!</p>';
+                return;
+            }
+
+            var html = '';
+            events.forEach(function(event) {
+                html +=
+                    '<div class="card card-book animate-on-scroll" style="max-width: 600px; margin: 0 auto;">' +
+                        '<div class="card-content" style="text-align: center; padding: 2rem;">' +
+                            '<img src="images/icons/community-events.svg" alt="Community event icon" style="width: 80px; height: 80px; margin: 0 auto 1rem;">' +
+                            '<h3>' + event.title + '</h3>' +
+                            '<p style="color: var(--color-accent); font-weight: 600; margin-bottom: 0.5rem;">' + event.date + '</p>' +
+                            '<p>' + event.description + '</p>' +
+                            '<a href="contact.html" class="btn btn-primary mt-md">Get Notified</a>' +
+                        '</div>' +
+                    '</div>';
+            });
+
+            container.innerHTML = html;
+
+            // Re-observe new elements for scroll animations
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { root: null, rootMargin: '0px 0px -50px 0px', threshold: 0.1 });
+
+            container.querySelectorAll('.animate-on-scroll').forEach(function(el) {
+                observer.observe(el);
+            });
+        })
+        .catch(function() {
+            container.innerHTML =
+                '<p style="text-align: center; color: var(--color-text-light); font-size: 1.1rem; grid-column: 1 / -1;">' +
+                'No upcoming events — check back soon!</p>';
+        });
 }
 
 // ============================================

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Get involved with Turn The Page Club. Sign up to volunteer, request book donations, or register for our reading programs.">
+    <meta name="description" content="Get involved with Turn The Page Club. Sign up to volunteer or register for our reading programs.">
     <title>Get Involved | Turn The Page Club</title>
 
     <!-- Favicon -->
@@ -153,13 +153,6 @@
                             </svg>
                             Volunteer
                         </button>
-                        <button class="form-tab" data-tab="books">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: block; margin: 0 auto 0.5rem;">
-                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                            </svg>
-                            Request Books
-                        </button>
                         <button class="form-tab" data-tab="program">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: block; margin: 0 auto 0.5rem;">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
@@ -261,79 +254,6 @@
 
                                     <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
                                         Submit Volunteer Application
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Book Request Form -->
-                    <div class="form-panel" id="books-panel">
-                        <div class="card animate-on-scroll">
-                            <div class="card-content" style="padding: 2rem;">
-                                <h2 style="margin-bottom: 0.5rem;">Request Books</h2>
-                                <p style="color: var(--color-text-light); margin-bottom: 1.5rem;">Request books for your child, classroom, or organization.</p>
-
-                                <form action="https://formspree.io/f/your-form-id" method="POST" data-validate data-ajax>
-                                    <input type="hidden" name="form_type" value="Book Request">
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="book-request-type">Request Type *</label>
-                                        <select id="book-request-type" name="request_type" class="form-select" required>
-                                            <option value="">Select request type</option>
-                                            <option value="individual">Individual/Family</option>
-                                            <option value="classroom">Classroom/School</option>
-                                            <option value="organization">Organization/Community Center</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="form-row">
-                                        <div class="form-group">
-                                            <label class="form-label" for="book-name">Contact Name *</label>
-                                            <input type="text" id="book-name" name="contact_name" class="form-input" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label" for="book-email">Email Address *</label>
-                                            <input type="email" id="book-email" name="email" class="form-input" required>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="book-org">Organization Name (if applicable)</label>
-                                        <input type="text" id="book-org" name="organization" class="form-input">
-                                    </div>
-
-                                    <div class="form-row">
-                                        <div class="form-group">
-                                            <label class="form-label" for="book-children">Number of Children</label>
-                                            <input type="number" id="book-children" name="num_children" class="form-input" min="1" placeholder="How many children need books?">
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="form-label" for="book-ages">Age Range</label>
-                                            <select id="book-ages" name="age_range" class="form-select">
-                                                <option value="">Select age range</option>
-                                                <option value="0-3">0-3 years (Board Books)</option>
-                                                <option value="4-6">4-6 years (Picture Books)</option>
-                                                <option value="7-9">7-9 years (Early Readers)</option>
-                                                <option value="10-12">10-12 years (Middle Grade)</option>
-                                                <option value="13-18">13-18 years (Young Adult)</option>
-                                                <option value="mixed">Mixed Ages</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="book-interests">Reading Interests or Preferences</label>
-                                        <textarea id="book-interests" name="reading_interests" class="form-textarea" rows="3" placeholder="Any specific genres, topics, or types of books preferred?"></textarea>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label class="form-label" for="book-additional">Additional Information</label>
-                                        <textarea id="book-additional" name="additional_info" class="form-textarea" rows="3" placeholder="Any other details we should know about your request?"></textarea>
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
-                                        Submit Book Request
                                     </button>
                                 </form>
                             </div>

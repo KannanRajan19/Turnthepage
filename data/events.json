@@ -1,0 +1,10 @@
+{
+  "_instructions": "Add events to the list below. Copy an existing entry and change the values. To remove an event, delete it. Date format: Month Day, Year (or use Coming Soon!)",
+  "events": [
+    {
+      "title": "Summer Reading Fair",
+      "date": "Coming Soon!",
+      "description": "Join us for a day of reading activities, book giveaways, and fun for the whole family. Stay tuned for dates and location."
+    }
+  ]
+}
