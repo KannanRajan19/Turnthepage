@@ -373,6 +373,7 @@ function loadEvents() {
                             '<img src="images/icons/community-events.svg" alt="Community event icon" style="width: 80px; height: 80px; margin: 0 auto 1rem;">' +
                             '<h3>' + event.title + '</h3>' +
                             '<p style="color: var(--color-accent); font-weight: 600; margin-bottom: 0.5rem;">' + event.date + '</p>' +
+                            (event.address ? '<p style="color: var(--color-text-light); font-size: 0.95rem; margin-bottom: 0.5rem;">📍 ' + event.address + '</p>' : '') +
                             '<p>' + event.description + '</p>' +
                             '<a href="contact.html" class="btn btn-primary mt-md">Get Notified</a>' +
                         '</div>' +
