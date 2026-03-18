@@ -359,9 +359,6 @@ function loadEvents() {
             var events = data.events || [];
 
             if (events.length === 0) {
-                container.innerHTML =
-                    '<p style="text-align: center; color: var(--color-text-light); font-size: 1.1rem; grid-column: 1 / -1;">' +
-                    'No upcoming events — check back soon!</p>';
                 return;
             }
 
@@ -396,9 +393,6 @@ function loadEvents() {
             });
         })
         .catch(function() {
-            container.innerHTML =
-                '<p style="text-align: center; color: var(--color-text-light); font-size: 1.1rem; grid-column: 1 / -1;">' +
-                'No upcoming events — check back soon!</p>';
         });
 }
 
