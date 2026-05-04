@@ -649,6 +649,11 @@ main {
     gap: var(--spacing-lg);
 }
 
+.team-grid.team-grid-mini {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+
 .team-card {
     text-align: center;
     padding: var(--spacing-lg);

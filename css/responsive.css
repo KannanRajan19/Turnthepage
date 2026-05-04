@@ -196,6 +196,10 @@
         gap: var(--spacing-md);
     }
 
+    .team-grid.team-grid-mini {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     /* Donation Options */
     .donation-options {
         grid-template-columns: 1fr;
@@ -314,6 +318,10 @@
     /* Team Grid */
     .team-grid {
         grid-template-columns: 1fr;
+    }
+
+    .team-grid.team-grid-mini {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .team-photo,
